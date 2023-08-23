@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-margin: 0;
+        }
+
+        * {
+            /* height: 200%; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: ui-monospace;
+            /* color:#722f37 ; */
+            text-overflow: ellipsis;
+            width: 100%;
+
+        }
+
+        .header {
+            background: rgb(66 97 70);
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* z-index: +1; */
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .btn {
+            display: flex;
+            background-color: rgb(66 97 70);
+            height: fit-content;
+            width: fit-content;
+            margin-right: 2em;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: 2px solid #bfb741;
+            transition: transform 0.4s;
+            flex-wrap: wrap;
+        }
+
+        .btn:hover {
+
+            background-color: #6b571a;
+            color: rgb(235, 232, 232);
+            border: 2px solid #bfb741;
+            cursor: pointer;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+        }
+
+        .content {
+            position: fixed;
+            top: 64%;
+            left: 30%;
+            font-size: 1.5em;
+            transform: translateY(-50%);
+        }
+
+        i {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <nav class="navbar">
+
+                <button class="btn"><i class="fa-solid fa-user">&nbsp;&nbsp;User</i></button>
+                <button class="btn" id="logout"><a href="./login.html"><i class="fa-solid fa-power-off">&nbsp;&nbsp;Log
+                    Out</i></a></button>
+
+
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container" style="background-image: url(./4.jpg); background-size: cover;">
+
+            <div class="content">
+                <h1 class="container-fluid">Welcome! You Logged In...</h1>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- <script>
+        function logout() {
+            window.location.href="./login.html"
+        }
+        document.getElementById("logout").addEventListener("click", logout);
+    </script> -->
+</body>
+
+</html>
